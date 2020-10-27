@@ -24,7 +24,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "tutorial-code": {
+    "hmrc-hr": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "http://localhost:57382",

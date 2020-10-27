@@ -7,10 +7,10 @@ RUN dotnet restore
 
 # Copy everything else and build
 COPY . ./
-RUN dotnet publish tutorial-code.sln -c Release -o out
+RUN dotnet publish hmrc-hr.sln -c Release -o out
 
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "tutorial-code.dll"]
+ENTRYPOINT ["dotnet", "hmrc-hr.dll"]
